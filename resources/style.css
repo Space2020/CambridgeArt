@@ -23,15 +23,16 @@ header{
 
 header .container{
   margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
   min-height: 7.5rem;
-  /*max-height: 15rem;*/
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   /*flex-wrap: wrap;*/
   border-bottom: 1px solid #000;
+  background-image: url("wine-stain.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .branding{
@@ -58,7 +59,6 @@ header .nav{
 header ul li{
   display: inline;
   padding: 0 0.625rem;
-  /*margin-right: 1.6rem;*/
   font-family: 'Dosis', sans-serif;
   color: #000;
 }
@@ -68,11 +68,20 @@ header a{
   text-decoration: none;
 }
 
-header li a:hover{
-  color: purple;
+
+/* Links for Nav */
+
+header li a:link{
+  color: #000;
+}
+
+header li a:visited{
   font-weight: bold;
 }
 
+header li a:hover{
+  font-weight: bold;
+}
 
 
 /* Section */
@@ -82,11 +91,11 @@ section{
 }
 
 section .container{
-  /*margin-top: 19.0625rem;*/
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 12rem 2rem 0 2rem;
+  margin: 12rem 2rem 5rem 2rem;
+
 }
 
 
@@ -97,8 +106,22 @@ section .container{
 section img{
   max-width: 15.625rem;
   margin: 1.25rem 1.06rem;
-  border: 0.25rem solid #e2e2e2;
+  box-shadow: 2px 2px 4px 5px #000;
 }
+
+
+/* Footer Section */
+
+.footer-content{
+  border-top: 1px solid black;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
+  font-weight: bold;
+  font-size: 0.925rem;
+  font-family: 'Dosis', sans-serif;
+}
+
 
 
 
@@ -133,7 +156,8 @@ section img{
 @media only screen and (max-width: 736px) {
 
   header .container{
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   header .nav{
