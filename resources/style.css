@@ -103,7 +103,7 @@ section .container{
 /* Images */
 
 section img{
-  max-width: 15.625rem;
+  max-width: 12.5rem;
   margin: 1.25rem 1.06rem;
   box-shadow: 2px 2px 4px 5px #000;
 }
@@ -139,7 +139,7 @@ section img:hover{
 }
 
 .follow-me a:hover{
-  
+
 }
 
 
